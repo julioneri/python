@@ -1,0 +1,10 @@
+obj = input ('Digite algo: ')
+cores = {'limpo':'\033[0m', 'sublinhado':'\033[4m'}
+print('-=-' * 9)
+print ('\033[1mTipo primitivo:\033[m',type(obj))
+print ('\033[1mSó tem espaços?\033[m', cores['sublinhado'], obj.isspace(), cores['limpo'])
+print ('\033[1mÉ numérico?\033[m', cores['sublinhado'], obj.isnumeric(), cores['limpo'])
+print ('\033[1mÉ alfabético?\033[m', cores['sublinhado'], obj.isalpha(), cores['limpo'])
+print ('\033[1mÉ alfanumérico?\033[m', cores['sublinhado'], obj.isalnum(), cores['limpo'])
+print ('\033[1mEstá captalizado?\033[m', cores['sublinhado'], obj.istitle(), cores['limpo'])
+print('-=-' * 9)
