@@ -1,0 +1,11 @@
+'''nome = str(input('Digite um nome: ')).strip()
+sep = nome.split()
+print('Olá, {}'.format('-'.join(sep)))'''
+nick = str(input('Digite o seu nick de usuário: ')).strip()
+print('Aguarde o processamento...')
+print('O seu nick em maiúsculas é \033[4m{}\033[m'.format(nick.upper()))
+print('O seu nick em minúsculas é \033[4m{}\033[m'.format(nick.lower()))
+print('O seu nick possui \033[4m{} letras\033[m'.format(len(nick) - nick.count(' ')))
+print('O seu primeiro nick possui \033[4m{} letras\033[m'.format(nick.find(' ')))
+nick = nick.split()
+print('A junção do seu nick é \033[31m{}\033[m'.format('-'.join(nick)))
